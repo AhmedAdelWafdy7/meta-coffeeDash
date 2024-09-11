@@ -1,0 +1,10 @@
+[Unit]
+Description= dashboard
+
+[Service]
+Type=forking
+User=root
+ExecStart=sh /usr/bin/dashboard-service.sh
+
+[Install]
+WantedBy=multi-user.target
