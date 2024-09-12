@@ -1,10 +1,13 @@
 [Unit]
 Description= dashboard
+After=network.target
 
 [Service]
 Type=forking
 User=root
 ExecStart=sh /usr/bin/dashboard-service.sh
+Restart=on-failure
+
 
 [Install]
 WantedBy=multi-user.target

@@ -48,7 +48,6 @@ IMAGE_INSTALL += " \
     ${TSLIB} \
     qtvirtualkeyboard \
     dashboard \
-    app-service \
 "
 
 export IMAGE_BASENAME = "qt5-basic-image"
